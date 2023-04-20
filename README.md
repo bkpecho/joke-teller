@@ -1,7 +1,9 @@
 # Joke Teller
+
 This web application utilizes modern web development techniques to create a fun and interactive experience for users, allowing them to hear random jokes generated from the Joke API. Using the Fetch API and asynchronous JavaScript functions like async/await, jokes are dynamically retrieved and spoken aloud using the VoiceRSS API's text-to-speech feature. To enhance the user experience, the app features a clean and responsive design, compatible with desktop, tablet, and mobile devices.
 
 ## Link to project:
+
 - Live Site URL: [Netlify](https://bk-joke-teller.netlify.app/)
 
 <!-- Screenshot of the joke teller -->
@@ -10,11 +12,11 @@ This web application utilizes modern web development techniques to create a fun 
 
 ### Mobile View
 
-![](/src/images/desktop-view.png)
+![](/src/img/mobile-view.png)
 
 ### Desktop View
 
-![](/src/images/desktop-view.png)
+![](/src/img/desktop-view.png)
 
 ## How It's Made:
 
@@ -31,10 +33,13 @@ In the future, I plan to further optimize the user experience with additional fe
 This project provided me with valuable experience in working with asynchronous JavaScript functions like async/await, as well as handling data retrieval and manipulation using the Fetch API. Additionally, I gained proficiency in using third-party APIs, and the text-to-speech feature provided by the VoiceRSS API.
 
 ## Author
+
 - Github - [BK Pecho](https://www.github.com/bkpecho)
 - Twitter - [@bkpecho](https://www.twitter.com/bkpecho)
 - LinkedIn - [in/bkpecho](https://www.linkedin.com/in/bkpecho/)
+- FrontEnd Mentor - [BK Pecho](https://www.frontendmentor.io/profile/bkpecho)
 
 ## For other examples of my work, check out these projects:
+
 - **Quote-Generator:** [GitHub Repository](https://github.com/bkpecho/quote-generator)
 - **Infinite Scroll:** [GitHub Repository](https://github.com/bkpecho/infinite-scroll)
