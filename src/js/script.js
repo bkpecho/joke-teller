@@ -105,13 +105,36 @@ const VoiceRSS = {
   }
 };
 
-VoiceRSS.speech({
-  key: '695ec93bf0884510b79a13827af5122b',
-  src: 'Hello, world!',
-  hl: 'en-us',
-  v: 'Linda',
-  r: 0,
-  c: 'mp3',
-  f: '44khz_16bit_stereo',
-  ssml: false
-});
+// VoiceRSS.speech({
+//   key: '695ec93bf0884510b79a13827af5122b',
+//   src: joke,
+//   hl: 'en-us',
+//   v: 'Linda',
+//   r: 0,
+//   c: 'mp3',
+//   f: '44khz_16bit_stereo',
+//   ssml: false
+// });
+
+// Get Jokes from Joke API
+
+async function getJokes() {
+  let joke = '';
+
+  const apiUrl =
+    'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    // Conditional to handle single and two part jokes
+    joke = data.joke ? data.joke : `${data.setup} ... ${data.delivery}`;
+
+    console.log(joke);
+  } catch (error) {
+    // Catch Errors
+    console.log('Beep-Boop:', error);
+  }
+}
+
+getJokes();
